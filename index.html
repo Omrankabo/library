@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="Logo.svg" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,700&display=swap" rel="stylesheet">
+
+    <title>My Library project</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div >
+                <img src="Logo.svg" alt="" class="logo">
+            </div>
+            <form>
+                <input type="text" placeholder="search">
+            </form>
+            <div>
+                <button class="showBtn">add book</button>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="overlay ">
+            <div class="overlayCard">
+
+                <form  >
+                    <div class="overlayClose">
+                        <button class="hide"><ion-icon name="close-outline"></ion-icon></button>
+                    </div>
+                    <input required type="text" name="title" placeholder="title" class="title input">
+
+                    <input required type="text" name="author" placeholder="author" class="author input">
+
+                    <input required type="number" min="1" placeholder="pages" name="pages" class="pages input">
+                    
+                    <div>
+                        <label for="read">
+                            did you read it?
+                        </label>
+                        <input type="checkbox" name="read" id="read" class="input read">
+                    </div>
+
+                    <button type="submit" class="add">add book</button>
+
+
+                </form>
+            </div>
+        </div>
+        <!--  -->
+        <div class="cardContainer">
+
+            <!-- <article class="card">
+                <div class="img">
+                    <img src="Logo.svg" alt="book">
+                </div>
+                <h1>Title : <span>the tell of two cities</span></h1>
+                
+                <h2>Author :  <span>alxender the first</span></h2>
+                <p>Pages : <span>155</span></p>
+                
+                <p>finished? <span class="finish">yeah || oh no</span></p>
+                <div class="btns">
+                    <button class="done">
+                        done! 
+                        <ion-icon name="checkmark-circle-outline"></ion-icon>
+                    </button>
+                    <button class="delete">
+                        delete!
+                        <ion-icon name="trash-bin-outline"></ion-icon>
+                    </button>
+                </div>
+            </article> -->
+            <!-- end -->
+            
+
+        </div>
+    </main>
+    
+    <script src="app.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
